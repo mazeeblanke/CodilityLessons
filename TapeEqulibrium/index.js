@@ -41,3 +41,4 @@ function solution(A) {
   });
   return min;
 }
+
