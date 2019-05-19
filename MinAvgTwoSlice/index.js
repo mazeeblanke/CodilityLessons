@@ -2,39 +2,35 @@ function minAvgTwoSlice(A) {
 
   let movingSum = getMovingSum(A);
 
-
-  let min = Infinity;
-  let minLeftIndex= Infinity;
+  let minimumAverage = Infinity;
+  let minLeftIndex = Infinity;
   let average;
 
-  for (let j =0; j < A.length; ++j) {
+  for (let j = 0; j < A.length; ++j) {
 
-      let h = j + 1;
+    // The idea here is for positive numbers, you will always obtain the samllest average from 2 integers rather than more
+    // while for negative you will always get the smallest/ largest negative number from either the average of 2 or 3 integers rather than more
+    [
+      {
+        divisor: 2,
+        rightIndex: j + 1
+      },
+      {
+        divisor: 3,
+        rightIndex: j + 2
+      }
+    ].forEach(({ divisor, rightIndex }) => {
 
-      if (h <= A.length -1) {
-          // console.log(h)
-          average = (movingSum[h+1] - movingSum[j]) / 2
+      if (rightIndex <= A.length - 1) {
+        average = (movingSum[rightIndex + 1] - movingSum[j]) / divisor
       }
 
-      if (average < min) {
-          // console.log(average)
-          min = average;
-          minLeftIndex = j
+      if (average < minimumAverage) {
+        minimumAverage = average;
+        minLeftIndex = j
       }
 
-
-      h = j + 2;
-
-      if (h <= A.length -1) {
-          // console.log(h)
-          average = (movingSum[h+1] - movingSum[j]) / 3
-      }
-
-      if (average < min) {
-          // console.log(average)
-          min = average;
-          minLeftIndex = j
-      }
+    });
 
   }
 
@@ -42,7 +38,7 @@ function minAvgTwoSlice(A) {
 }
 
 
-
+// Calculate the moving sum
 function getMovingSum (A) {
   let p = Array(A.length + 1);
 
@@ -53,8 +49,6 @@ function getMovingSum (A) {
   }
 
   return p;
-
-
 }
 
 module.exports = minAvgTwoSlice
