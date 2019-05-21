@@ -4,7 +4,7 @@ This project attempts to provide solutions to the codility [Questions/Lessons](h
 
 ## How to setup
 
-1) Clone repo ```https://github.com/mazeeblanke/handyman-mobile-app.git```
+1) Clone repo ```https://github.com/mazeeblanke/CodilityLessons.git```
 
 2) ```cd CodilityLessons```
 
