@@ -1,0 +1,12 @@
+{
+  "name": "TapeEqulibrium",
+  "version": "1.0.0",
+  "description": "A non-empty array A consisting of N integers is given. Array A represents numbers on a tape.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
