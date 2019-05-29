@@ -12,4 +12,9 @@ describe('perm check', () => {
   it ('returns 0 if A contains a single element', () => {
     expect(permCheck([2])).toBe(0);
   })
+
+  it ('returns 0 if A contains a repeated elements', () => {
+    expect(permCheck([2, 2])).toBe(0);
+    expect(permCheck([1, 1])).toBe(0);
+  })
 })
