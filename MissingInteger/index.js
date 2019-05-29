@@ -1,16 +1,16 @@
 
 function solution(A) {
-  const dictionary = {}
+
   let minimum = 1
+  let count = []
 
   A.forEach((element) => {
-      dictionary[element] = true
-      if (element === minimum) {
-          while (dictionary[minimum]) {
-              minimum++
-          }
-      }
+    count[element] = (count[element] || 0) + 1
   })
+
+  while (count[minimum]) {
+    minimum++
+  }
 
   return minimum;
 
