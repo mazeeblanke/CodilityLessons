@@ -10,11 +10,8 @@ This project attempts to provide solutions to the codility [Questions/Lessons](h
 
 3) Each folder contains a lesson/challenge.
 
-    In order to see solution to a particular problem, follow these steps:
-
-      i) Run ```npm install``` to download and install the neccesary dependencies
-
-      ii) Run test with ```jest```
+4) Run ```npm install``` to install any required dependency.
+   Run test with ```jest```
 
 
 Your contributions are welcome !! :)

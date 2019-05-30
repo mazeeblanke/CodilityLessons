@@ -1,0 +1,20 @@
+{
+  "name": "CodilityLessons",
+  "version": "1.0.0",
+  "description": "This project attempts to provide solutions to the codility [Questions/Lessons](https://app.codility.com/programmers/lessons/1-iterations/) in javascript",
+  "main": "jest.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mazeeblanke/CodilityLessons.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mazeeblanke/CodilityLessons/issues"
+  },
+  "homepage": "https://github.com/mazeeblanke/CodilityLessons#readme"
+}
